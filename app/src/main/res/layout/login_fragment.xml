@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="82dp"
+
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_info_text"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp" />
+
+    <RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:background="@drawable/round"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/usernamelogo"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/login_username"
+        android:layout_toStartOf="@+id/login_username" />
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/login_username"
+        android:singleLine="true"
+
+        android:hint="@string/username"
+        android:backgroundTint="@color/main"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="22dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/passlogo"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/login_password"
+            android:layout_toStartOf="@+id/login_password" />
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/login_password"
+            android:password="true"
+            android:singleLine="true"
+            android:hint="@string/password"
+            android:backgroundTint="@color/main"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:src="@drawable/log_in"
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fastlogin"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#64000000">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/main"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/obmanka"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Most Popular"
+                    android:gravity="center"
+                    android:textSize="50dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Animals"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#animals #animal #pet #TagsForLikes #dog #cat #dogs #cats  #photooftheday #cute #pets #instagood #animales #cute #love #nature  #animallovers #pets_of_instagram #petstagram #petsagram
+"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Art"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#art #illustration #drawing #draw #TagsForLikes #picture #artist #sketch  #sketchbook #paper #pen #pencil #artsy #instaart #beautiful #instagood #gallery #masterpiece #creative #photooftheday #instaartist #graphic #graphics #artoftheday
+" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Cats"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#cat #cats #TagsForLikes #catsagram #catstagram #instagood  #kitten #kitty #kittens #pet #pets #animal #animals #petstagram #petsagram  #photooftheday #catsofinstagram #ilovemycat #instagramcats #nature #catoftheday #lovecats #furry #sleeping #lovekittens #adorable #catlover #instacat
+"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Football"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#football #ball #pass #TagsForLikes #footballgame  #footballseason #footballgames #footballplayer #instagood #pass #jersey #stadium #field #yards #photooftheday #yardline #pads #touchdown #TFLers #catch #quarterback #fit #grass #nfl #superbowl #kickoff #run
+ "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Love"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#love #couple #cute #adorable #TagsForLikes #kiss  #kisses #hugs #romance #forever #girlfriend #boyfriend #gf #bf #bff #together #photooftheday #happy #me #girl #boy #beautiful #instagood #instalove #loveher #lovehim #pretty #fun #smile #xoxo
+ "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags Most Popular"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\#photooftheday #amazing #smile #look #instalike  #igers #picoftheday #instadaily #instafollow #iphoneonly #bestoftheday #instacool #instago #all_shots #follow #webstagram #colorful #style #swag #love #instatalent #me #fun #bestsnap #life #hot_shotz #popularpic #ig_bestever #tbt #clubsocial
+ "/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

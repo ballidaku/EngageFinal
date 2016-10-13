@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/colorPrimary"
+    tools:context="com.soft.adi.engage.appToLike">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/back_btnn1"
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="17dp"
+        android:src="@drawable/back_button"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100000"
+        android:id="@+id/user_coinss1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Free Coins"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/to_buy"
+        android:textSize="25dp"
+        android:textColor="#585858"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/back_btn"
+        android:layout_alignStart="@+id/back_btn" />
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/coin"
+        android:gravity="end"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/buy_list1"
+        android:layout_marginTop="150dp"
+        />
+</RelativeLayout>

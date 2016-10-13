@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.soft.adi.engage.MasterActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/top_bar">
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/top_bar_menu_item"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:background="@android:color/transparent"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/top_menu_item"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:background="@color/main">
+
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimary"
+          android:text="GET COINS"
+          android:textColor="#ffffff"
+          android:id="@+id/get_coin_main_btn"
+          android:layout_gravity="top"
+          android:textSize="14dp"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimary"
+          android:text="GET LIKES"
+          android:id="@+id/get_likes_main_btn"
+          android:textSize="14dp"
+          android:layout_gravity="top"
+
+          android:textColor="#ffffff"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimary"
+          android:text="GET FOLLOWERS"
+          android:id="@+id/get_follower_main_btn"
+          android:textColor="#ffffff"
+          android:textSize="14dp"
+          />
+
+  </LinearLayout>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment_container"
+
+        android:background="@color/colorPrimary"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/coins"
+       android:text="0"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentRight="true"
+       android:gravity="end"
+       android:layout_marginTop="15dp"
+       android:layout_marginRight="25dp"/>
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/coin"
+        android:gravity="end"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/side_bar">
+       <LinearLayout
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@color/colorPrimary"
+           android:elevation="5dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp">
+<ImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:id="@+id/side_bar_user_pic"
+               android:layout_centerVertical="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginLeft="14dp"
+               android:layout_marginStart="14dp" />
+               <ImageView
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="14dp"
+                   android:layout_marginStart="14dp"
+                   android:src="@drawable/mask"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="the11"
+                   android:textSize="14dp"
+                   android:id="@+id/side_bar_username"
+                   android:layout_marginTop="12dp"
+                   android:layout_alignTop="@+id/side_bar_user_pic"
+                   android:layout_toRightOf="@+id/side_bar_user_pic"
+                   android:layout_toEndOf="@+id/side_bar_user_pic"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginStart="10dp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="100 coins"
+                   android:textSize="10dp"
+                   android:id="@+id/side_bar_user_coin"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginTop="11dp"
+                   android:layout_below="@+id/side_bar_username"
+                   android:layout_toRightOf="@+id/imageView2"
+                   android:layout_toEndOf="@+id/imageView2" />
+               <ImageView
+                   android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:src="@drawable/coin"
+                   android:id="@+id/imageView2"
+                   android:layout_alignTop="@+id/side_bar_user_coin"
+                   android:layout_centerHorizontal="true" />
+           </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:id="@+id/side_bar_buy_coins">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:id="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coin Pack"
+        android:textColor="@color/main"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/coinsnake"
+        android:id="@+id/imageView4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#353535"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="55dp"
+               android:id="@+id/side_bar_get_coins">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Get"
+                   android:id="@+id/textViewx"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_alignTop="@+id/imageView4x"
+                   android:layout_toRightOf="@+id/imageView4x"
+                   android:layout_toEndOf="@+id/imageView4x" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Free Coins"
+                   android:textColor="@color/main"
+                   android:textStyle="bold"
+                   android:id="@+id/textViewx2"
+                   android:layout_alignTop="@+id/textViewx"
+                   android:layout_toRightOf="@+id/textViewx"
+                   android:layout_toEndOf="@+id/textViewx"
+                   android:layout_marginLeft="8dp"
+                   android:layout_marginStart="8dp" />
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/coinpiramid"
+                   android:id="@+id/imageView4x"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginStart="15dp" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#353535"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true" />
+               </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="55dp"
+               android:id="@+id/side_bar_contact_us">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Contact us"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_alignTop="@+id/imageView4y"
+                   android:layout_toRightOf="@+id/imageView4y"
+                   android:layout_toEndOf="@+id/imageView4y" />
+
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/contactusicon"
+                   android:id="@+id/imageView4y"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginStart="15dp" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#353535"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true" />
+               </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="55dp"
+               android:id="@+id/side_bar_more_apps">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="More apps"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_alignTop="@+id/imageView4z"
+                   android:layout_toRightOf="@+id/imageView4z"
+                   android:layout_toEndOf="@+id/imageView4z" />
+
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/moreappsicon"
+                   android:id="@+id/imageView4z"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginStart="15dp" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#353535"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true" />
+               </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="55dp"
+               android:id="@+id/side_bar_log_out">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Log Out"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_alignTop="@+id/imageView4u"
+                   android:layout_toRightOf="@+id/imageView4u"
+                   android:layout_toEndOf="@+id/imageView4u" />
+
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/logouticon"
+                   android:id="@+id/imageView4u"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginStart="15dp" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#353535"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true" />
+               </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/side_bar_acc_list"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/side_bar_add_acc"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add account"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:textColor="#464646"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView4k"
+                android:layout_toEndOf="@+id/imageView4k" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/addaccounticon"
+                android:id="@+id/imageView4k"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp" />
+
+            </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+       </LinearLayout>
+   </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/loadingPanelmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#64000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/main"/>
+    </RelativeLayout>
+</RelativeLayout>

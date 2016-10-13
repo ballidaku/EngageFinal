@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Engage</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="com.stripe.publishable_key" translatable="false">pk_live_7Dul8FV8WrTsb7wkSV1p05py</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

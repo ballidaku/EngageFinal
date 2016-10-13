@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.midnight.engage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+
+    <application
+        android:name="com.midnight.engage.Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name="com.midnight.engage.MasterActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.midnight.engage.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.midnight.engage.AddCompain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.midnight.engage.BuyActivity"
+            android:screenOrientation="portrait"
+           />
+
+        <activity android:name="com.midnight.engage.appToLike"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6712ba2d0b1d0943a8b74179259cb320adea1ab5" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6712ba2d0b1d0943a8b74179259cb320adea1ab5" />
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="5dp">
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/appimage"
+    android:layout_alignTop="@+id/imageView5"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="12dp"
+    android:layout_marginStart="12dp" />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/coinsnake"
+        android:id="@+id/imageView5"
+        android:layout_alignBottom="@+id/appprice"
+        android:layout_toRightOf="@+id/appimage"
+        android:layout_toEndOf="@+id/appimage"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 coins"
+        android:id="@+id/appprice"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/appimage"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download and rate this app with 5 stars"
+        android:textSize="10dp"
+        android:textColor="#494949"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/appimage"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginBottom="4dp" />
+</RelativeLayout>

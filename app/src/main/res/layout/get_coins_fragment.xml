@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/to_like_content_image"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/mask_getcoins"
+        android:src="@drawable/mask"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:layout_marginTop="380dp"
+       android:layout_marginBottom="40dp">
+       <Button
+           android:layout_width="160dp"
+           android:layout_height="50dp"
+           android:text="LIKE"
+           android:textColor="@color/main"
+           android:textSize="16dp"
+           android:background="@drawable/round2"
+           android:id="@+id/get_likes_like_btn"
+
+
+           android:layout_centerHorizontal="true" />
+       <Button
+           android:layout_width="51dp"
+           android:layout_height="51dp"
+           android:background="@drawable/round3"
+           android:text="SKIP"
+           android:textColor="#686868"
+           android:id="@+id/get_likes_skip_btn"
+           android:textSize="10dp"
+
+           android:layout_marginLeft="25dp"
+           />
+       <Button
+           android:layout_width="51dp"
+           android:layout_height="51dp"
+           android:textColor="#686868"
+           android:id="@+id/get_likes_get_coins_btn"
+           android:textSize="10dp"
+           android:background="@drawable/round3"
+           android:text="BUY COINS"
+
+
+           android:layout_alignParentEnd="true"
+           android:layout_marginRight="25dp"
+           android:layout_alignParentRight="true" />
+
+   </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tofollowusername"
+        android:textColor="@color/main"
+        android:visibility="invisible"
+        android:layout_below="@+id/to_like_content_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>
